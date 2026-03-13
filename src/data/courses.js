@@ -1,0 +1,80 @@
+export const courses = [
+  {
+    id: 1,
+    title: "JavaScript desde Cero",
+    instructor: "Carlos Mendoza",
+    category: "Programación",
+    level: "Principiante",
+    price: 299,
+    rating: 4.8,
+    students: 12430,
+    duration: "24h 30min",
+    image: "https://placehold.co/400x220/1a1d27/3b82f6?text=JavaScript",
+    description: "Aprende JavaScript desde los fundamentos hasta conceptos avanzados."
+  },
+  {
+    id: 2,
+    title: "React + Tailwind CSS",
+    instructor: "Ana López",
+    category: "Programación",
+    level: "Intermedio",
+    price: 399,
+    rating: 4.9,
+    students: 8750,
+    duration: "18h 15min",
+    image: "https://placehold.co/400x220/1a1d27/3b82f6?text=React",
+    description: "Domina React y Tailwind para crear interfaces modernas."
+  },
+  {
+    id: 3,
+    title: "Python para Data Science",
+    instructor: "Roberto Silva",
+    category: "Data Science",
+    level: "Intermedio",
+    price: 449,
+    rating: 4.7,
+    students: 9200,
+    duration: "30h 00min",
+    image: "https://placehold.co/400x220/1a1d27/3b82f6?text=Python",
+    description: "Análisis de datos con Python, Pandas y visualizaciones."
+  },
+  {
+    id: 4,
+    title: "Diseño UI/UX Moderno",
+    instructor: "María Torres",
+    category: "Diseño",
+    level: "Principiante",
+    price: 349,
+    rating: 4.6,
+    students: 6100,
+    duration: "20h 45min",
+    image: "https://placehold.co/400x220/1a1d27/3b82f6?text=UI/UX",
+    description: "Crea interfaces atractivas y experiencias de usuario increíbles."
+  },
+  {
+    id: 5,
+    title: "Node.js y Express",
+    instructor: "Carlos Mendoza",
+    category: "Programación",
+    level: "Intermedio",
+    price: 379,
+    rating: 4.8,
+    students: 7300,
+    duration: "22h 10min",
+    image: "https://placehold.co/400x220/1a1d27/3b82f6?text=Node.js",
+    description: "Construye APIs REST robustas con Node.js y Express."
+  },
+  {
+    id: 6,
+    title: "SQL y Bases de Datos",
+    instructor: "Laura Gómez",
+    category: "Base de Datos",
+    level: "Principiante",
+    price: 279,
+    rating: 4.5,
+    students: 5400,
+    duration: "16h 30min",
+    image: "https://placehold.co/400x220/1a1d27/3b82f6?text=SQL",
+    description: "Aprende SQL y diseño de bases de datos relacionales."
+  }
+]
