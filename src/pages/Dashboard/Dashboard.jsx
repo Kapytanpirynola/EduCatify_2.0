@@ -13,7 +13,7 @@ function Dashboard() {
   // Si no hay sesión, redirige al login
   useEffect(() => {
     if (!user) navigate('/login')
-  }, [user])
+  }, [navigate, user])
 
   if (!user) return null
 
@@ -72,7 +72,7 @@ function Dashboard() {
 
                 {/* Imagen */}
                 <img src={course.image} alt={course.title}
-                     className="w-20 h-14 rounded-lg object-cover flex-shrink-0" />
+                     className="w-20 h-14 rounded-lg object-cover shrink-0" />
 
                 {/* Info */}
                 <div className="flex-1 min-w-0">
@@ -100,7 +100,7 @@ function Dashboard() {
                 </div>
 
                 {/* Duración */}
-                <span className="text-xs flex-shrink-0" style={{color: '#8892a4'}}>
+                <span className="text-xs shrink-0" style={{color: '#8892a4'}}>
                   {course.duration}
                 </span>
 
