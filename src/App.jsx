@@ -1,17 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './pages/Home/Home.jsx';
-import Login from './pages/Login/Login.jsx';
-import Register from './pages/Register/Register.jsx';
-import Dashboard from './pages/Dashboard/Dashboard.jsx';
-import Courses from './pages/Courses/Courses.jsx';
-import CourseDetail from './pages/CourseDetail/CourseDetail.jsx';
-
-/* COMPONENTES */
-import Navbar from './components/layout/Navbar.jsx';
-
-
-
-
+import Navbar from './components/layout/Navbar';
+import PrivateRoute from './components/ui/PrivateRoute';
+import Home from './pages/Home/Home';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Courses from './pages/Courses/Courses';
+import CourseDetail from './pages/CourseDetail/CourseDetail';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return(
@@ -21,9 +17,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:id" element={<CourseDetail />} />
+        <Route path="/dashboard" element={
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
+        } />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )
