@@ -29,7 +29,7 @@ function Navbar() {
           </Link>
         </div>
 
-        {/* Derecha — empuja con ml-auto */}
+        {/* Derecha */}
         <div className="flex items-center gap-3 ml-auto">
           {user ? (
             <>
@@ -42,6 +42,13 @@ function Navbar() {
                   {user.name}
                 </span>
               </Link>
+
+              {/* Link Mi Perfil */}
+              <Link to="/profile" style={{color: '#8892a4'}}
+                    className="text-sm px-4 py-2 hover:text-white transition-colors">
+                Mi Perfil
+              </Link>
+
               <button onClick={handleLogout}
                       className="px-4 py-2 rounded-lg text-sm transition-opacity hover:opacity-80"
                       style={{backgroundColor: '#2a2d3a', color: '#8892a4'}}>
